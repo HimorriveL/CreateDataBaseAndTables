@@ -1,0 +1,28 @@
+[{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "sigep",
+  "password": "artorius",
+  "database": "banco_teste",
+  "entities": ["./src/models/*.ts"],
+  "migrations": ["./src/database/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
+},
+
+{
+  "name": "create_database_connection",
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "sigep",
+  "password": "artorius",
+  "database": "postgres",
+  "entities": ["./src/models/*.ts"],
+  "migrations": ["./src/database/migrationDataBase/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrationDataBase"
+  }
+}]
